@@ -1,9 +1,9 @@
 package testutil
 
 import (
+	"github.com/ipfs/go-datastore"
+	syncds "github.com/ipfs/go-datastore/sync"
 	ds2 "github.com/ipfs/go-ipfs/thirdparty/datastore2"
-	"gx/ipfs/QmNgqJarToRiq2GBaPJhkmW4B5BxS5B74E1rkGvv2JoaTp/go-datastore"
-	syncds "gx/ipfs/QmNgqJarToRiq2GBaPJhkmW4B5BxS5B74E1rkGvv2JoaTp/go-datastore/sync"
 )
 
 func ThreadSafeCloserMapDatastore() ds2.ThreadSafeDatastoreCloser {
