@@ -32,14 +32,14 @@
     },
     {
       "author": "jbenet",
-      "hash": "QmNgqJarToRiq2GBaPJhkmW4B5BxS5B74E1rkGvv2JoaTp",
+      "hash": "QmbzuUusHqaLLoNTDEVLcSF6vZDHZDLPC7p4bztRvvkXxU",
       "name": "go-datastore",
-      "version": "0.2.1"
+      "version": "1.0.0"
     }
   ],
   "gxVersion": "0.8.0",
   "language": "go",
   "license": "MIT",
   "name": "go-testutil",
-  "version": "1.0.1"
+  "version": "1.0.2"
 }
