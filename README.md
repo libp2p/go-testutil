@@ -7,9 +7,15 @@
 
 > A collection of testing utilities for ipfs and libp2p
 
-## Documenation
+## Install
 
-See https://godoc.org/github.com/libp2p/go-testutil.
+```sh
+go get github.com/libp2p/go-testutil
+```
+
+## Usage
+
+See the [documentation](https://godoc.org/github.com/libp2p/go-testutil).
 
 ## Contribute
 
@@ -23,4 +29,4 @@ This repository falls under the IPFS [Code of Conduct](https://github.com/ipfs/c
 
 ## License
 
-MIT
+[MIT](LICENSE) © Protocol Labs, Inc.
