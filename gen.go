@@ -4,14 +4,15 @@ import (
 	"bytes"
 	"errors"
 	"fmt"
-	"io"
+	"math/rand"
 	"sync"
 	"testing"
 
-	u "github.com/ipfs/go-ipfs-util"
-	ci "github.com/libp2p/go-libp2p-crypto"
-	peer "github.com/libp2p/go-libp2p-peer"
-	ma "github.com/multiformats/go-multiaddr"
+	ma "gx/ipfs/QmSWLfmj5frN9xVLMMN846dMDriy5wN5jeghUm7aTW3DAG/go-multiaddr"
+	ci "gx/ipfs/QmTuX6VtWTbWgPwd5PMXHyp411RKsW5nBqLKVVRfJMNneb/go-libp2p-crypto"
+	peer "gx/ipfs/QmbKtZxyDqUJp7Ad8tGr5nrLqoi9nfgqFxcNbmLJbfaHPe/go-libp2p-peer"
+	ptest "gx/ipfs/QmbKtZxyDqUJp7Ad8tGr5nrLqoi9nfgqFxcNbmLJbfaHPe/go-libp2p-peer/test"
+	mh "gx/ipfs/QmbZ6Cee2uHjG7hf19qLHppgKDRtaG4CVtMzdmK9VCVqLu/go-multihash"
 )
 
 // ZeroLocalTCPAddress is the "zero" tcp local multiaddr. This means:
@@ -28,11 +29,11 @@ func init() {
 }
 
 func RandTestKeyPair(bits int) (ci.PrivKey, ci.PubKey, error) {
-	return ci.GenerateKeyPairWithReader(ci.RSA, bits, u.NewTimeSeededRand())
+	return ptest.RandTestKeyPair(bits)
 }
 
 func SeededTestKeyPair(seed int64) (ci.PrivKey, ci.PubKey, error) {
-	return ci.GenerateKeyPairWithReader(ci.RSA, 512, u.NewSeededRand(seed))
+	return ptest.SeededTestKeyPair(seed)
 }
 
 // RandPeerID generates random "valid" peer IDs. it does not NEED to generate
@@ -42,10 +43,8 @@ func SeededTestKeyPair(seed int64) (ci.PrivKey, ci.PubKey, error) {
 //  id, _ := peer.IDFromPublicKey(pk)
 func RandPeerID() (peer.ID, error) {
 	buf := make([]byte, 16)
-	if _, err := io.ReadFull(u.NewTimeSeededRand(), buf); err != nil {
-		return "", err
-	}
-	h := u.Hash(buf)
+	rand.Read(buf)
+	h, _ := mh.Sum(buf, mh.SHA2_256, -1)
 	return peer.ID(h), nil
 }
 
