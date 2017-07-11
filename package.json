@@ -15,20 +15,20 @@
     },
     {
       "author": "whyrusleeping",
-      "hash": "QmP1DfoUjiWH2ZBo1PBH6FupdBucbDepx3HpWmEY6JMUpY",
+      "hash": "QmaPbCnUMBohSGo3KnxEa2bHqyJVVeEEcwtqJAYxerieBo",
       "name": "go-libp2p-crypto",
-      "version": "1.4.2"
+      "version": "1.5.0"
     },
     {
       "author": "whyrusleeping",
-      "hash": "QmdS9KpbDyPrieswibZhkod1oXqRwZJrUPzxCofAMWpFGq",
+      "hash": "QmXYjuNuxVzXKJCfWasQk1RqkhVLDM9jtUKhqc2WPQmFSB",
       "name": "go-libp2p-peer",
-      "version": "2.1.7"
+      "version": "2.2.0"
     },
     {
-      "hash": "QmcyqRMCAXVtYPS4DiBrA7sezL9rRGfW8Ctx7cywL4TXJj",
+      "hash": "QmXY77cVe7rVRQXZZQRioukUM7aRW3BTcAgJe12MCtb3Ji",
       "name": "go-multiaddr",
-      "version": "1.2.2"
+      "version": "1.2.4"
     }
   ],
   "gxVersion": "0.8.0",
@@ -36,6 +36,6 @@
   "license": "MIT",
   "name": "go-testutil",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "1.1.7"
+  "version": "1.1.8"
 }
 
