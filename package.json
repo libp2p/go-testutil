@@ -35,6 +35,12 @@
       "hash": "QmU9a9NV9RdPNwZQDYd5uKsm6N6LJLSvLbywDDYFbaaC6P",
       "name": "go-multihash",
       "version": "1.0.5"
+    },
+    {
+      "author": "whyrusleeping",
+      "hash": "QmTprEaAA2A9bst5XH7exuyi5KzNMK3SEDNN8rBDnKWcUS",
+      "name": "go-cid",
+      "version": "0.7.17"
     }
   ],
   "gxVersion": "0.8.0",
@@ -42,6 +48,6 @@
   "license": "MIT",
   "name": "go-testutil",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "1.1.9"
+  "version": "1.1.10"
 }
 

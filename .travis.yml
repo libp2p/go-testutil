@@ -10,6 +10,10 @@ install:
   - go get github.com/whyrusleeping/gx-go
   - gx install --global
 
+script:
+  - go vet
+  - gx test -v -race ./...
+
 cache:
   directories:
     - $GOPATH/src/gx
