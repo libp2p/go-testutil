@@ -38,9 +38,9 @@
     },
     {
       "author": "whyrusleeping",
-      "hash": "QmTprEaAA2A9bst5XH7exuyi5KzNMK3SEDNN8rBDnKWcUS",
+      "hash": "QmetUj3ZqWMDVeFMRq7S9PdMauXCwBZuggfHqoS4MPt1Vy",
       "name": "go-cid",
-      "version": "0.7.17"
+      "version": "0.7.18"
     }
   ],
   "gxVersion": "0.8.0",
@@ -48,6 +48,6 @@
   "license": "MIT",
   "name": "go-testutil",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "1.1.10"
+  "version": "1.1.11"
 }
 
