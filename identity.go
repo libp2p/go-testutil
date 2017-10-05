@@ -53,3 +53,8 @@ func (p *identity) PrivateKey() ci.PrivKey {
 func (p *identity) PublicKey() ci.PubKey {
 	return p.PubKey
 }
+
+// NewIdentity constructs a new identity object with specific parameters
+func NewIdentity(ID peer.ID, addr ma.Multiaddr, privk ci.PrivKey, pubk ci.PubKey) Identity {
+	return &identity{PeerNetParams{ID: ID, Addr: addr, PrivKey: privk, PubKey: pubk}}
+}
