@@ -146,7 +146,7 @@ func RandPeerNetParams() (*PeerNetParams, error) {
 	var p PeerNetParams
 	var err error
 	p.Addr = ZeroLocalTCPAddress
-	p.PrivKey, p.PubKey, err = RandTestKeyPair(512)
+	p.PrivKey, p.PubKey, err = RandTestKeyPair(1024)
 	if err != nil {
 		return nil, err
 	}
