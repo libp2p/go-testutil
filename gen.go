@@ -45,7 +45,7 @@ func RandPeerID() (peer.ID, error) {
 	buf := make([]byte, 16)
 	rand.Read(buf)
 	h, _ := mh.Sum(buf, mh.SHA2_256, -1)
-	return peer.ID(h), nil
+	return peer.ID(h.Binary()), nil
 }
 
 func RandPeerIDFatal(t testing.TB) peer.ID {
