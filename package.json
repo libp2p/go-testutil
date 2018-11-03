@@ -15,15 +15,15 @@
     },
     {
       "author": "whyrusleeping",
-      "hash": "QmcgyFuP2SVMhgkTjFaXwnyAi9Fheg6A7SWgpYJKuajPnK",
+      "hash": "QmNiJiXwWE3kRhZrC5ej3kSjWHm337pYfhjLGSCDNKJP2s",
       "name": "go-libp2p-crypto",
-      "version": "2.0.3"
+      "version": "2.0.4"
     },
     {
       "author": "whyrusleeping",
-      "hash": "Qme2jJHLnAfULnkrSxmqAn7pGTp3HWVmFYLnuLtxFvH9nA",
+      "hash": "QmcqU6QUDSXprb1518vYDGczrTJTyGwLG9eUa5iNX4xUtS",
       "name": "go-libp2p-peer",
-      "version": "2.4.2"
+      "version": "2.4.3"
     },
     {
       "hash": "QmRKLtwMw131aK7ugC3G7ybpumMz78YrJe5dzneyindvG1",
@@ -42,6 +42,6 @@
   "license": "MIT",
   "name": "go-testutil",
   "releaseCmd": "git commit -a -m \"gx publish $VERSION\"",
-  "version": "1.2.12"
+  "version": "1.2.13"
 }
 
