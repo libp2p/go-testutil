@@ -31,3 +31,7 @@ This repository falls under the IPFS [Code of Conduct](https://github.com/ipfs/c
 ## License
 
 [MIT](LICENSE) © Protocol Labs, Inc.
+
+---
+
+The last gx published version of this module was: 1.2.19: QmWapVoHjtKhn4MhvKNoPTkJKADFGACfXPFnt7combwp5W
