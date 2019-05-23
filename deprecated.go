@@ -7,11 +7,10 @@ import (
 
 	ci "github.com/libp2p/go-libp2p-core/crypto"
 	"github.com/libp2p/go-libp2p-core/peer"
+	"github.com/libp2p/go-libp2p-core/test"
 
-	"github.com/libp2p/go-libp2p-testing/crypto"
 	"github.com/libp2p/go-libp2p-testing/etc"
 	"github.com/libp2p/go-libp2p-testing/net"
-	"github.com/libp2p/go-libp2p-testing/peer"
 
 	ma "github.com/multiformats/go-multiaddr"
 )
@@ -19,26 +18,26 @@ import (
 // Deprecated: use github.com/libp2p/go-libp2p-testing/net.ZeroLocalTCPAddress instead.
 var ZeroLocalTCPAddress = tnet.ZeroLocalTCPAddress
 
-// Deprecated: use github.com/libp2p/go-libp2p-testing/crypto.RandTestKeyPair instead.
+// Deprecated: use github.com/libp2p/go-libp2p-core/test.RandTestKeyPair instead.
 // Supply RSA as a key type to get an equivalent result.
 func RandTestKeyPair(bits int) (ci.PrivKey, ci.PubKey, error) {
-	return tcrypto.RandTestKeyPair(ci.RSA, bits)
+	return test.RandTestKeyPair(ci.RSA, bits)
 }
 
-// Deprecated: use github.com/libp2p/go-libp2p-testing/crypto.SeededTestKeyPair instead.
+// Deprecated: use github.com/libp2p/go-libp2p-core/test.SeededTestKeyPair instead.
 // Supply RSA as a key type, with 512 bits, to get an equivalent result.
 func SeededTestKeyPair(seed int64) (ci.PrivKey, ci.PubKey, error) {
-	return tcrypto.SeededTestKeyPair(ci.RSA, 512, seed)
+	return test.SeededTestKeyPair(ci.RSA, 512, seed)
 }
 
-// Deprecated: use github.com/libp2p/go-libp2p-testing/peer.RandPeerID instead.
+// Deprecated: use github.com/libp2p/go-libp2p-core/test.RandPeerID instead.
 func RandPeerID() (peer.ID, error) {
-	return tpeer.RandPeerID()
+	return test.RandPeerID()
 }
 
-// Deprecated: use github.com/libp2p/go-libp2p-testing/peer.RandPeerIDFatal instead.
+// Deprecated: use github.com/libp2p/go-libp2p-core/test.RandPeerIDFatal instead.
 func RandPeerIDFatal(t testing.TB) peer.ID {
-	return tpeer.RandPeerIDFatal(t)
+	return test.RandPeerIDFatal(t)
 }
 
 // Deprecated: use github.com/libp2p/go-libp2p-testing/net.RandLocalTCPAddress instead.
