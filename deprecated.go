@@ -1,3 +1,4 @@
+// Deprecated: use github.com/libp2p/go-libp2p-testing and subpackages instead.
 package testutil
 
 import (
@@ -16,7 +17,9 @@ import (
 )
 
 // Deprecated: use github.com/libp2p/go-libp2p-testing/net.ZeroLocalTCPAddress instead.
-var ZeroLocalTCPAddress = tnet.ZeroLocalTCPAddress
+// Warning: it's impossible to alias a var in go. Writes to this var would have no longer
+// have any effect, so it has been commented out to induce breakage for added safety.
+// var ZeroLocalTCPAddress = tnet.ZeroLocalTCPAddress
 
 // Deprecated: use github.com/libp2p/go-libp2p-core/test.RandTestKeyPair instead.
 // Supply RSA as a key type to get an equivalent result.
